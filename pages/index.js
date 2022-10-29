@@ -4,7 +4,6 @@ import {
     Typography,
     ButtonGroup
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import Link from "next/link";
 import Head from "next/head";
 const indexPage = function () {
