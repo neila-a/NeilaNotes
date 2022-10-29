@@ -1,4 +1,4 @@
 const newPage = () => {
     
 };
-export default thisPage;
+export default newPage;
