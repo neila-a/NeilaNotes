@@ -14,13 +14,13 @@ import {
 import * as React from "react";
 import Router from "next/router";
 const loginPage = () => {
-    const [values, setValues] = React.useState({
+    const [values, setValues] = {
         amount: '',
         password: '',
         weight: '',
         weightRange: '',
         showPassword: false,
-    });
+    };
     const handleChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
         if (event.target.value == "hh0123") {
