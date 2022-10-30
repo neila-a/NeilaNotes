@@ -28,7 +28,6 @@ const PassWordEdit = (propsInThisControl) => {
                     pathname: propsInThisControl.go,
                     query: {}
                 });
-                alert("正在跳转中……");
             }
         }
     };
