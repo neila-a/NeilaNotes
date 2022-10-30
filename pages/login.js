@@ -2,7 +2,7 @@ import {
     Container,
     Typography
 } from "@mui/material";
-import Login from "../components/login";
+import Login from "../components/logindo";
 import * as React from "react";
 import Head from "next/head";
 const loginPage = () => {
