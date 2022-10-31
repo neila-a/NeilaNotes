@@ -38,15 +38,15 @@ const PassWordEdit = (propsInThisControl) => {
         setUserName(event.target.value);
     };
     const login = () => {
-        LoginUtil.loginUser(userName, passWord);
-        Router.push({
-            pathname: propsInThisControl.go,
-            query: {}
+        LoginUtil.loginUser(userName, passWord, () => {
+            Router.push({
+                pathname: propsInThisControl.go,
+                query: {}
+            });
         });
     }
     const reg = () => {
-        LoginUtil.regUser(userName, passWord);
-        login();
+        LoginUtil.regUser(userName, passWord, login);
     };
     return (
         <>
