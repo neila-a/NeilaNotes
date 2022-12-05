@@ -10,7 +10,6 @@ import {
 } from "@mui/icons-material";
 import Link from "next/link";
 import * as React from "react";
-import config from "../neilanotes.config";
 import Router from "next/router";
 const MenuBar = (props) => {
     if (props.in == "main") {
@@ -83,7 +82,7 @@ const MenuBar = (props) => {
             <Menu />
         </IconButton>*/}
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    {config.title.en}
+                    {process.env.titleEn}
                 </Typography>{/* Deleted Code
         <Button color="inherit" onClick={() => {
             alert("想不到吧，这玩意也是没用的");

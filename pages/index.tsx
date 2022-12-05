@@ -6,13 +6,12 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import Head from "next/head";
-import config from "../neilanotes.config";
 import * as React from "react";
 const indexPage = function () {
     return (
         <>
             <Head>
-                <title>{config.title.cn}</title>
+                <title>{process.env.titleCn}</title>
             </Head>
             <Container maxWidth="sm" style={{
                 alignItems: "center",
@@ -20,7 +19,7 @@ const indexPage = function () {
                 textAlign: "center",
                 height: "100%"
             }}>
-                <Typography variant="h2">{config.title.cn}</Typography>
+                <Typography variant="h2">{process.env.titleCn}</Typography>
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
                     <Link href="/login">
                         <Button variant="contained" size="large">登录</Button>

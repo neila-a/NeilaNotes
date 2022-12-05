@@ -12,7 +12,6 @@ import {
 import Router from "next/router";
 import * as React from "react";
 import * as NoteUtil from "../functions/leancloud";
-import config from "../neilanotes.config";
 const PassWordEdit = (propsInThisControl: {
     go: string;
 }) => {
@@ -20,7 +19,7 @@ const PassWordEdit = (propsInThisControl: {
     const [showPassword, setShowPassword] = React.useState(false);
     const handlePassWordChange = (event) => {
         setPassWord(event.target.value);
-        if (event.target.value == config.passWord && typeof window !== "undefined") {
+        if (event.target.value == process.env.passWord && typeof window !== "undefined") {
             window.localStorage.setItem("passWord", event.target.value);
         }
         Router.push(propsInThisControl.go);

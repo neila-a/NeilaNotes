@@ -1,10 +1,15 @@
-import config from "../neilanotes.config";
+import {
+    useEffect,
+    useState
+} from "react";
 import * as React from "react";
 import { Alert, AlertTitle } from "@mui/material";
 export default function Check(props): JSX.Element {
     var check: boolean;
-    switch (window.localStorage.getItem("passWord")) {
-        case config.passWord:
+    var [passWord, setPassWord] = useState<string>();
+    useEffect(() => setPassWord(window.localStorage.getItem("passWord")), [setPassWord]);
+    switch (passWord) {
+        case process.env.passWord:
             check = true;
             break;
         default:
