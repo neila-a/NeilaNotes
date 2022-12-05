@@ -9,7 +9,7 @@ export default function Check(props): JSX.Element {
     var [passWord, setPassWord] = useState<string>();
     useEffect(() => setPassWord(window.localStorage.getItem("passWord")), [setPassWord]);
     switch (passWord) {
-        case process.env.passWord:
+        case process.env.NEXT_PUBLIC_passWord:
             check = true;
             break;
         default:

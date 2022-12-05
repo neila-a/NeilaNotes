@@ -82,7 +82,7 @@ const MenuBar = (props) => {
             <Menu />
         </IconButton>*/}
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                    {process.env.titleEn}
+                    {process.env.NEXT_PUBLIC_titleEn}
                 </Typography>{/* Deleted Code
         <Button color="inherit" onClick={() => {
             alert("想不到吧，这玩意也是没用的");

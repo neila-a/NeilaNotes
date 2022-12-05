@@ -19,7 +19,7 @@ const PassWordEdit = (propsInThisControl: {
     const [showPassword, setShowPassword] = React.useState(false);
     const handlePassWordChange = (event) => {
         setPassWord(event.target.value);
-        if (event.target.value == process.env.passWord && typeof window !== "undefined") {
+        if (event.target.value == process.env.NEXT_PUBLIC_passWord && typeof window !== "undefined") {
             window.localStorage.setItem("passWord", event.target.value);
             Router.push(propsInThisControl.go);
         }   

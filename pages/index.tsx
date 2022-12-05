@@ -11,7 +11,7 @@ const indexPage = function () {
     return (
         <>
             <Head>
-                <title>{process.env.titleCn}</title>
+                <title>{process.env.NEXT_PUBLIC_titleCn}</title>
             </Head>
             <Container maxWidth="sm" style={{
                 alignItems: "center",
@@ -19,7 +19,7 @@ const indexPage = function () {
                 textAlign: "center",
                 height: "100%"
             }}>
-                <Typography variant="h2">{process.env.titleCn}</Typography>
+                <Typography variant="h2">{process.env.NEXT_PUBLIC_titleCn}</Typography>
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
                     <Link href="/login">
                         <Button variant="contained" size="large">登录</Button>
