@@ -5,7 +5,7 @@ import {
 import Login from "../components/logindo";
 import * as React from "react";
 import Head from "next/head";
-const loginPage = () => {
+const LoginPage = () => {
     return (
         <Container maxWidth="sm" style={{
             alignItems: "center",
@@ -21,4 +21,4 @@ const loginPage = () => {
         </Container>
     );
 };
-export default loginPage;
+export default LoginPage;
