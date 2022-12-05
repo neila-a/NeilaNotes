@@ -21,8 +21,8 @@ const PassWordEdit = (propsInThisControl: {
         setPassWord(event.target.value);
         if (event.target.value == process.env.passWord && typeof window !== "undefined") {
             window.localStorage.setItem("passWord", event.target.value);
-        }
-        Router.push(propsInThisControl.go);
+            Router.push(propsInThisControl.go);
+        }   
     };
     const handleClickShowPassword = () => {
         setShowPassword(!showPassword);
