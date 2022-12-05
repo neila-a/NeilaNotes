@@ -1,5 +1,5 @@
 import AV from "leancloud-storage";
-import error from "./error";
+import error from "../../functions/error";
 import Router from "next/router";
 import * as React from "react";
 declare global {
@@ -69,3 +69,4 @@ export {
     Note,
     findNote
 };
+
