@@ -7,6 +7,7 @@ import {
 import Link from "next/link";
 import Head from "next/head";
 import config from "../neilanotes.config";
+import * as React from "react";
 const indexPage = function () {
     return (
         <>

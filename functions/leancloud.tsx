@@ -1,6 +1,14 @@
 import AV from "leancloud-storage";
 import error from "./error";
 import Router from "next/router";
+import * as React from "react";
+declare global {
+    interface Window {
+        registerStatus: any[];
+        loginStatus: any[];
+        foundNotes: AV.Queriable[];
+    }
+}
 const { Query, User } = AV;
 AV.init({
     appId: "LfguhHqPbp8hn5J4KUNkKQ8u-MdYXbMMI",

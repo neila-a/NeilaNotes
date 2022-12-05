@@ -9,6 +9,7 @@ import {
     ArrowBack
 } from "@mui/icons-material";
 import Link from "next/link";
+import * as React from "react";
 import config from "../neilanotes.config";
 import Router from "next/router";
 const MenuBar = (props) => {
@@ -40,7 +41,7 @@ const MenuBar = (props) => {
                 </Link>
             );
         };
-    } else if (props.in == "add") {
+    } else /* if (props.in == "add") */ {
         var IconBtn = () => {
             return (
                 <IconButton
